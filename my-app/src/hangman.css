@@ -4,6 +4,14 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .Hangman h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
   
   .Hangman-word {
     font-size: 3rem;
@@ -26,4 +34,52 @@
     font-size: 2rem;
     margin-right: 1rem;
     text-transform: lowercase
+  }
+
+  .Hangman-game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .Hangman-restart-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .Hangman-restart-button:hover {
+    background-color: #3e8e41;
+  }
+
+  .Hangman-guess-button {
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .Hangman-guess-button:hover {
+    background-color: #4cae4c;
   }
